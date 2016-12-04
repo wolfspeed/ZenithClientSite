@@ -1,0 +1,20 @@
+<table *ngIf="results" border="1">
+  <thead>
+    <tr>
+      <th>Event ID</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Creation Date</th>
+      <th>Is Active?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of results; let i=index">
+      <td>{{p.eventId}}</td>
+      <td>{{p.begin}}</td>
+      <td>{{p.end}}</td>
+      <td>{{p.creationDate}}</td>
+      <td>{{p.isActive}}</td>
+    </tr>
+  </tbody>
+</table>
